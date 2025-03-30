@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Bolt Electronics</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" href="img/e.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <header><i class="fas fa-shopping-bag"></i> Shop</header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+                <li><a href="faqs.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="payment.html"><i class="fas fa-money-bill-wave"></i> Payments</a></li>
+            </ul>
+        </nav>
+        <form id="searchform">
+            <div class="search-wrapper">
+                <input type="text" id="searchinput" placeholder="search product...">
+                <button type="submit"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </form>
+        <div class="cart-icon">
+            <a href="cart.html">
+                <img src="img/cart.jpg.jpg" alt="Cart">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+       
+            
+        
+    </section>
+    <div class="cart-container">
+        <button class="view-cart" onclick="window.location.href='cart.html'">View Cart</button>
+      </div>
+      
+      <aside class="filter-sidebar">
+        <h3>Filters</h3>
+        <form id="filter-form">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="appliances">Large appliances</option>
+                <option value="appliances">Other large appliances</option>
+                <option value="appliances">Small appliances</option>
+                <option value="security">Security devices</option>
+                <option value="cameras">Cameras</option>
+                <option value="networking">Networking devices</option>
+                <option value="computing">Computing devices</option>
+                <option value="accessories">Electrical Accessories</option>
+            </select>
+    
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="0" max="100000" step="1000" value="50000">
+            <span id="price-label">Ksh 50,000</span>
+            <label for="sort-by">Sort By:</label>
+            <select id="sort-by">
+                <option value="name-asc">Name: A-Z</option>
+                <option value="name-desc">Name: Z-A</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+            </select>
+        </form>
+    </aside>
+    
+    <div class="shop-container">
+        <p>Powering Your World, One Device at a Time!</p>
+        </div>
+
+        <section class="product-grid" id="product-list">
+        </section>
+        <section class="product-category electrical-accessories">
+            <h6><i class="fas fa-mobile-alt"></i> Smartphones</h6>
+            <section class="brand-section">
+                <h4 class="styled-heading">Samsung</h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/galaxy s23.jpeg" alt="Samsung Galaxy S23">
+                        <h3>Samsung Galaxy S23</h3>
+                        <p>High performance and stunning design.</p>
+                        <span>Price: Ksh 95,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/A54.jpeg" alt="Samsung Galaxy A54">
+                        <h3>Samsung Galaxy A54</h3>
+                        <p>Affordable with great features.</p>
+                        <span>Price: Ksh 45,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/Z flip.jpeg" alt="Samsung Galaxy Z Flip">
+                        <h3>Samsung Galaxy Z Flip</h3>
+                        <p>Foldable and futuristic.</p>
+                        <span>Price: Ksh 130,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/S22.jpeg" alt="Samsung Galaxy S22">
+                        <h3>Samsung Galaxy S22</h3>
+                        <p>Compact design with great performance.</p>
+                        <span>Price: Ksh 80,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                        <div class="product-card">
+                            <img src="img/A72.jpeg" alt="Samsung Galaxy A72">
+                            <h3>Samsung Galaxy A72</h3>
+                            <p>Large display with good performance.</p>
+                            <span>Price: Ksh 45,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/A51.jpeg" alt="Samsung Galaxy A51">
+                            <h3>Samsung Galaxy A51</h3>
+                            <p>Good camera and performance at a budget price.</p>
+                            <span>Price: Ksh 25,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/S20.jpeg" alt="Samsung Galaxy S20 Ultra">
+                            <h3>Samsung Galaxy S20 Ultra</h3>
+                            <p>Flagship with a powerful camera and screen.</p>
+                            <span>Price: Ksh 135,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/M12.jpeg" alt="Samsung Galaxy M12">
+                            <h3>Samsung Galaxy M12</h3>
+                            <p>Big battery with an affordable price.</p>
+                            <span>Price: Ksh 20,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/S21 FE.jpeg" alt="Samsung Galaxy S21 FE">
+                            <h3>Samsung Galaxy S21 FE</h3>
+                            <p>Flagship performance at a lower price.</p>
+                            <span>Price: Ksh 90,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/M42.jpeg" alt="Samsung Galaxy M42">
+                            <h3>Samsung Galaxy M42</h3>
+                            <p>Mid-range phone with a large battery.</p>
+                            <span>Price: Ksh 28,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/z flip5.jpeg" alt="Samsung Galaxy Z Flip 5">
+                            <h3>Samsung Galaxy Z Flip 5</h3>
+                            <p>Compact and foldable with innovative design.</p>
+                            <span>Price: Ksh 150,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/AO2.jpeg" alt="Samsung Galaxy A02">
+                            <h3>Samsung Galaxy A02</h3>
+                            <p>Affordable with basic features.</p>
+                            <span>Price: Ksh 15,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/S10E.jpeg" alt="Samsung Galaxy S10e">
+                            <h3>Samsung Galaxy S10e</h3>
+                            <p>Flagship specs at a smaller price.</p>
+                            <span>Price: Ksh 50,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/A11.jpeg" alt="Samsung Galaxy A11">
+                            <h3>Samsung Galaxy A11</h3>
+                            <p>Affordable entry-level smartphone.</p>
+                            <span>Price: Ksh 18,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                            <div class="product-card">
+                                <img src="img/A32.jpeg" alt="Samsung Galaxy A32">
+                                <h3>Samsung Galaxy A32</h3>
+                                <p>Affordable with a large display.</p>
+                                <span>Price: Ksh 22,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/NOTE S20 ULTRA.jpeg" alt="Samsung Galaxy Note 20 Ultra">
+                                <h3>Samsung Galaxy Note 20 Ultra</h3>
+                                <p>Powerful performance with the S Pen.</p>
+                                <span>Price: Ksh 150,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/A10.jpeg" alt="Samsung Galaxy A10">
+                                <h3>Samsung Galaxy A10</h3>
+                                <p>Budget-friendly with great performance.</p>
+                                <span>Price: Ksh 14,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/S9.jpeg" alt="Samsung Galaxy S9">
+                                <h3>Samsung Galaxy S9</h3>
+                                <p>Classic flagship with great features.</p>
+                                <span>Price: Ksh 45,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                    <div class="product-card">
+                        <img src="img/A53.jpeg" alt="Samsung Galaxy A53">
+                        <h3>Samsung Galaxy A53</h3>
+                        <p>Great value for money with smooth performance.</p>
+                        <span>Price: Ksh 40,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOTE 20.jpeg" alt="Samsung Galaxy Note 20">
+                        <h3>Samsung Galaxy Note 20</h3>
+                        <p>Powerful device for productivity.</p>
+                        <span>Price: Ksh 120,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="brand-section">
+                <h4 class="styled-heading">Apple</h4>
+                <div class="product-grid">
+                        <div class="product-card">
+                            <img src="img/iphone 15 pro max.jpeg" alt="iPhone 15 Pro Max">
+                            <h3>iPhone 15 Pro Max</h3>
+                            <p>Top-tier performance with a stunning display.</p>
+                            <span>Price: Ksh 220,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/14 pro.jpeg" alt="iPhone 14 Pro">
+                            <h3>iPhone 14 Pro</h3>
+                            <p>Next-gen performance with a Pro-level camera system.</p>
+                            <span>Price: Ksh 155,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/14 plus.jpeg" alt="iPhone 14 Plus">
+                            <h3>iPhone 14 Plus</h3>
+                            <p>Big screen, bigger battery, premium performance.</p>
+                            <span>Price: Ksh 135,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/IPHONE 13 PRO MAX.jpeg" alt="iPhone 13 Pro Max">
+                            <h3>iPhone 13 Pro Max</h3>
+                            <p>Pro camera system and incredible battery life.</p>
+                            <span>Price: Ksh 150,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/13 mini.jpeg" alt="iPhone 13 Mini">
+                            <h3>iPhone 13 Mini</h3>
+                            <p>Compact design with powerful performance.</p>
+                            <span>Price: Ksh 95,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/iphone 12.jpeg" alt="iPhone 12">
+                            <h3>iPhone 12</h3>
+                            <p>5G-ready with a stunning OLED display.</p>
+                            <span>Price: Ksh 85,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/12 pro max.jpeg" alt="iPhone 12 Pro Max">
+                            <h3>iPhone 12 Pro Max</h3>
+                            <p>Largest iPhone screen with advanced camera features.</p>
+                            <span>Price: Ksh 125,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/IPHONE SE.jpeg" alt="iPhone SE 2022">
+                            <h3>iPhone SE (2022)</h3>
+                            <p>Compact, fast, and affordable iPhone.</p>
+                            <span>Price: Ksh 55,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/IPHONE 11.jpeg" alt="iPhone 11">
+                            <h3>iPhone 11</h3>
+                            <p>Great performance with dual-camera system.</p>
+                            <span>Price: Ksh 75,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/iphone 15 pro max.jpeg" alt="iPhone 15 Pro">
+                            <h3>iPhone 15 Pro</h3>
+                            <p>Powerful, sleek, and elegant.</p>
+                            <span>Price: Ksh 180,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                </div>
+            </section>
+            <div class="brand-section">
+                <h4 class="styled-heading">Xiaomi </h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/XIAOMI 13 PRO.jpeg" alt="Xiaomi 13 Pro">
+                        <h3>Xiaomi 13 Pro</h3>
+                        <p>Premium flagship with Leica camera and Snapdragon 8 Gen 2.</p>
+                        <span>Price: Ksh 135,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/XIAOMI 13.jpeg" alt="Xiaomi 13">
+                        <h3>Xiaomi 13</h3>
+                        <p>Affordable flagship with Snapdragon 8 Gen 2 and 50 MP camera.</p>
+                        <span>Price: Ksh 120,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/REDMI NOTE 12 PRO.jpeg" alt="Redmi Note 12 Pro">
+                        <h3>Redmi Note 12 Pro</h3>
+                        <p>Mid-range phone with excellent performance and camera.</p>
+                        <span>Price: Ksh 45,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/REDMI NOTE12.jpeg" alt="Redmi Note 12">
+                        <h3>Redmi Note 12</h3>
+                        <p>Budget-friendly phone with great performance and features.</p>
+                        <span>Price: Ksh 30,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/XIAOMI MI 11.jpeg" alt="Xiaomi Mi 11">
+                        <h3>Xiaomi Mi 11</h3>
+                        <p>Flagship with Snapdragon 888 and 108 MP camera.</p>
+                        <span>Price: Ksh 80,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/XIAOMI 11T PRO.jpeg" alt="Xiaomi 11T Pro">
+                        <h3>Xiaomi 11T Pro</h3>
+                        <p>Fast charging, great performance, and stunning design.</p>
+                        <span>Price: Ksh 75,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/REDMI K50 PRO.jpeg" alt="Redmi K50 Pro">
+                        <h3>Redmi K50 Pro</h3>
+                        <p>Premium performance with Dimensity 9000 and 108 MP camera.</p>
+                        <span>Price: Ksh 60,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/XIAOMI POCO X5 PRO.jpeg" alt="Xiaomi Poco X5 Pro">
+                        <h3>Xiaomi Poco X5 Pro</h3>
+                        <p>Powerful performance for gaming and multitasking.</p>
+                        <span>Price: Ksh 35,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/XIAOMI MI MIX 4.jpeg" alt="Xiaomi Mi Mix 4">
+                        <h3>Xiaomi Mi Mix 4</h3>
+                        <p>Innovative design with an under-display camera.</p>
+                        <span>Price: Ksh 100,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/REDMI 11 PRO+.jpeg" alt="Redmi Note 11 Pro+">
+                        <h3>Redmi Note 11 Pro+</h3>
+                        <p>Great value for money with fast charging and 108 MP camera.</p>
+                        <span>Price: Ksh 40,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="brand-section">
+                <h4 class="styled-heading">Nokia</h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/NOKIA 5.4.jpeg" alt="Nokia 5.4">
+                        <h3>Nokia 5.4</h3>
+                        <p>Great camera with cinematic video and performance.</p>
+                        <span>Price: Ksh 25,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 8.3 5G.jpeg" alt="Nokia 8.3 5G">
+                        <h3>Nokia 8.3 5G</h3>
+                        <p>5G connectivity and powerful performance.</p>
+                        <span>Price: Ksh 45,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 3.4.jpeg" alt="Nokia 3.4">
+                        <h3>Nokia 3.4</h3>
+                        <p>Affordable phone with solid performance and a big display.</p>
+                        <span>Price: Ksh 18,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 2.4.jpeg" alt="Nokia 2.4">
+                        <h3>Nokia 2.4</h3>
+                        <p>Reliable phone with long-lasting battery life.</p>
+                        <span>Price: Ksh 15,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 7.2.jpeg" alt="Nokia 7.2">
+                        <h3>Nokia 7.2</h3>
+                        <p>Stunning camera with ZEISS optics and solid build quality.</p>
+                        <span>Price: Ksh 35,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 1.4.jpeg" alt="Nokia 1.4">
+                        <h3>Nokia 1.4</h3>
+                        <p>Affordable with a large screen and good performance.</p>
+                        <span>Price: Ksh 12,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 9PUREVIEW.jpeg" alt="Nokia 9 PureView">
+                        <h3>Nokia 9 PureView</h3>
+                        <p>Revolutionary five-camera system with incredible photo quality.</p>
+                        <span>Price: Ksh 85,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>                                        
+                    <div class="product-card">
+                        <img src="img/NOKIA XR20.jpeg" alt="Nokia XR20">
+                        <h3>Nokia XR20</h3>
+                        <p>Durable and reliable.</p>
+                        <span>Price: Ksh 50,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA G50.jpeg" alt="Nokia G50">
+                        <h3>Nokia G50</h3>
+                        <p>Feature-packed and affordable.</p>
+                        <span>Price: Ksh 35,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/NOKIA 2720 FLIP.jpeg" alt="Nokia 2720 Flip">
+                        <h3>Nokia 2720 Flip</h3>
+                        <p>Classic design reinvented.</p>
+                        <span>Price: Ksh 20,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                </section>
+            </section>
+
+            <section class="product-category electrical-accessories">
+            <h6><i class="fas fa-home"></i> Home Appliances</h6>
+            <section class="brand-section large-appliances">
+                <h6>Large Appliances</h6>
+                <section class="product-category woofers">
+                    <h4 class="styled-heading"><i class="fa fa-volume-up"></i>Woofers</h4>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="img/klipsch woofer.jpeg" alt="Klipsch Reference Woofer">
+                            <h3>Klipsch Reference Woofer</h3>
+                            <p>Powerful bass with premium sound quality.</p>
+                            <span>Ksh 3,700</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/svs subwoofer.jpeg" alt="SVS PB-1000">
+                            <h3>SVS PB-1000</h3>
+                            <p>Deep, clean bass for your home theater.</p>
+                            <span>Ksh 5,800</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/yamaha.jpeg" alt="Yamaha NS-SW300">
+                            <h3>Yamaha NS-SW300</h3>
+                            <p>Stylish design with exceptional bass performance.</p>
+                            <span>Ksh 2,900</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/pol audio subwoofer.jpeg" alt="Polk Audio HTS 10">
+                            <h3>Polk Audio HTS 10</h3>
+                            <p>Compact and affordable, perfect for small spaces.</p>
+                            <span>Ksh 4,500</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/vitron.webp" alt="Vitron ">
+                            <h3>Vitron x-bass</h3>
+                            <p>Vitron V527 2.1CH Multimedia Speaker System</p>
+                            <span>Ksh 9,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/jbl base pro woofer.jpeg" alt="JBL BassPro Hub">
+                            <h3>JBL BassPro Hub</h3>
+                            <p>Portable design with premium bass.</p>
+                            <span>Ksh 3,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/AMTEC SUBWOOFER.jpg" alt="AMTEC AM-006">
+                            <h3>AMTEC AM-006</h3>
+                            <p>Amtec AM-006 15000W X-Bass Subwoofer Multimedia</p>
+                            <span>Ksh 25,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/ampex subwoofer1.jpeg" alt="AMPEX A-8102">
+                            <h3>AMPEX A-8102</h3>
+                            <p>Ampex A-8102 Multimedia Speaker System 3.1CH 40000w</p>
+                            <span>Ksh 5,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/iconix subwoofer.webp" alt="ICONIX">
+                            <h3>ICONIX 2.1CH</h3>
+                            <p>active subwoofer system</p>
+                            <span>Ksh 8,900</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section class="product-category televisions">
+                    <h4 class="styled-heading"><i class="fa fa-television"></i> Televisions</h4>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="img/samsung tv.jpeg" alt="Samsung TV">
+                            <h3>Samsung TV</h3>
+                            <p>Innovative smart TV with 4K resolution.</p>
+                            <span>Ksh 80,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/skyworth tv.jpg" alt="Skyworth TV">
+                            <h3>Skyworth TV </h3>
+                            <p>Skyworth 55″ 55G3B QLED 4k UHD Google Tv</p>
+                            <span>Ksh 55,000</span>
+                            <button class="add-to-cart">Add to Cart</button>>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/xiami tv.jpg" alt="Xiaomi TV">
+                            <h3>Xiaomi TV</h3>
+                            <p>Xiaomi Mi TV P1 32 inch HD Smart Android LED TV</p>
+                            <span>Ksh 80,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/lg.jpeg" alt="LG TV">
+                            <h3>LG TV</h3>
+                            <p>Crystal clear OLED display and smart features.</p>
+                            <span>Ksh 75,000</span>
+                            <button class="add-to-cart">Add to Cart</button>ct</button></a>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/sony tv.jpeg" alt="Sony TV">
+                            <h3>Sony TV</h3>
+                            <p>Top-tier LED TV with excellent picture quality.</p>
+                            <span>Ksh 95,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/panasonic.jpeg" alt="Panasonic TV">
+                            <h3>Panasonic TV</h3>
+                            <p>Advanced features and sleek design.</p>
+                            <span>Ksh 70,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/tsl tv.jpeg" alt="TCL TV">
+                            <h3>TCL TV</h3>
+                            <p>Affordable, high-quality TV with smart features.</p>
+                            <span>Ksh 55,000</span>
+                            <button class="add-to-cart">Add to Cart</button>></a>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/sharp tv.jpeg" alt="Sharp TV">
+                            <h3>Sharp TV</h3>
+                            <p>High definition display with stunning picture quality.</p>
+                            <span>Ksh 60,000</span>
+                            <button class="add-to-cart">Add to Cart</button>/a>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/vizio tv.jpeg" alt="Vizio TV">
+                            <h3>Vizio TV</h3>
+                            <p>Affordable LED TVs with great features.</p>
+                            <span>Ksh 50,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/hisense tv.jpeg" alt="Hisense TV">
+                            <h3>Hisense TV</h3>
+                            <p>Great value with excellent picture quality.</p>
+                            <span>Ksh 65,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/phillips tv.jpeg" alt="Philips TV">
+                            <h3>Philips TV</h3>
+                            <p>Stylish and high-performing smart TV.</p>
+                            <span>Ksh 80,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/sanyo tv.jpeg" alt="Sanyo TV">
+                            <h3>Sanyo TV</h3>
+                            <p>Affordable, quality TV with great features.</p>
+                            <span>Ksh 45,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/QLED TV.jpeg" alt="QLED TV">
+                            <h3>QLED TV</h3>
+                            <p>Quantum dot technology for better brightness and color.</p>
+                            <span>Ksh 180,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/LED TV.jpeg" alt="LED TV">
+                            <h3>LED TV</h3>
+                            <p>Energy-efficient and reliable performance.</p>
+                            <span>Ksh 60,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/8K TV.jpeg" alt="8K TV">
+                            <h3>8K TV</h3>
+                            <p>Future-proof your home with 8K resolution.</p>
+                            <span>Ksh 350,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/SMART CURVED TV.jpeg" alt="Smart Curved TV">
+                            <h3>Smart Curved TV</h3>
+                            <p>Combine smart features with a curved screen for ultimate viewing.</p>
+                            <span>Ksh 220,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/smart tv.jpeg" alt="Smart TV">
+                            <h3>Smart TV</h3>
+                            <p>Enjoy streaming with high-definition clarity.</p>
+                            <span>Ksh 80,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/4K TV.jpeg" alt="4K Ultra HD TV">
+                            <h3>4K Ultra HD TV</h3>
+                            <p>Experience stunning picture quality and clarity.</p>
+                            <span>Ksh 120,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/CURVED TV.jpeg" alt="Curved TV">
+                            <h3>Curved TV</h3>
+                            <p>Immersive viewing experience with curved screen.</p>
+                            <span>Ksh 150,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/LED 4K TV.jpeg" alt="LED 4K TV">
+                            <h3>LED 4K TV</h3>
+                            <p>High definition with crystal-clear 4K resolution.</p>
+                            <span>Ksh 130,000</span>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <section class="product-category cooking-appliances">
+                        <h4 class="styled-heading">Cooking Appliances</h4>
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="img/gas cooker.jpeg" alt="Gas Cooker">
+                                <h3>Gas Cooker</h3>
+                                <p>Efficient and durable cooking solution.</p>
+                                <span>Price: Ksh 18,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/electric oven.jpeg" alt="Electric Oven">
+                                <h3>Electric Oven</h3>
+                                <p>Bake, roast, and grill your favorite dishes with precision.</p>
+                                <span>Ksh 40,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/convetion oven.jpeg" alt="Oven">
+                                <h3>Convection Oven</h3>
+                                <p>Perfect for baking and roasting.</p>
+                                <span>Price: Ksh 30,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/air fryer oven.jpeg" alt="Air Fryer Oven">
+                                <h3>Air Fryer Oven</h3>
+                                <p>Healthy frying and baking in one appliance.</p>
+                                <span>Price: Ksh 25,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/pressure cooker.jpeg" alt="Pressure Cooker">
+                                <h3>Pressure Cooker</h3>
+                                <p>Fast and energy-saving cooking.</p>
+                                <span>Price: Ksh 10,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/food processor.jpeg" alt="Food Processor">
+                                <h3>Food Processor</h3>
+                                <p>Chop, slice, and dice with ease.</p>
+                                <span>Price: Ksh 18,500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/deep fryer.jpeg" alt="Deep Fryer">
+                                <h3>Deep Fryer</h3>
+                                <p>Fry your favorite foods perfectly.</p>
+                                <span>Price: Ksh 12,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/slow cooker.jpeg" alt="Slow Cooker">
+                                <h3>Slow Cooker</h3>
+                                <p>Cook meals slowly for maximum flavor.</p>
+                                <span>Price: Ksh 15,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/stand mixer.jpeg" alt="Stand Mixer">
+                                <h3>Stand Mixer</h3>
+                                <p>Mix, knead, and whip with ease.</p>
+                                <span>Price: Ksh 25,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section class="product-category other-large-appliances">
+                        <h6>Other Large Appliances</h6>
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="img/washing machine.webp" alt="Washing Machine">
+                                <h3>Washing Machine</h3>
+                                <p>Efficient cleaning for your clothes.</p>
+                                <span>Price: Ksh 25,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/refrigerator.webp" alt="Refrigerator">
+                                <h3>Refrigerator</h3>
+                                <p>Keep your food fresh for longer.</p>
+                                <span>Price: Ksh 50,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/air conditioner.jpeg" alt="Air Conditioner">
+                                <h3>Air Conditioner</h3>
+                                <p>Stay cool and comfortable throughout the year.</p>
+                                <span>Price: Ksh 45,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/vacuum cleaner.webp" alt="Vacuum Cleaner">
+                                <h3>Vacuum Cleaner</h3>
+                                <p>Keep your floors spotless.</p>
+                                <span>Price: Ksh 18,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/dishwasher.webp" alt="Dishwasher">
+                                <h3>Dishwasher</h3>
+                                <p>Clean your dishes effortlessly.</p>
+                                <span>Price: Ksh 40,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/water dispenser.png" alt="Water Dispenser">
+                                <h3>Water Dispenser</h3>
+                                <p>Cool and hot water at your fingertips.</p>
+                                <span>Price: Ksh 15,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/home theatre system.jpeg" alt="Home Theater System">
+                                <h3>Home Theater System</h3>
+                                <p>Immerse yourself in cinematic audio.</p>
+                                <span>Price: Ksh 50,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/ice maker.jpeg" alt="Ice Maker">
+                                <h3>Ice Maker</h3>
+                                <p>Make ice quickly for your drinks.</p>
+                                <span>Price: Ksh 12,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/electric grill.jpeg" alt="Electric Grill">
+                                <h3>Electric Grill</h3>
+                                <p>Grill your favorite dishes indoors.</p>
+                                <span>Price: Ksh 10,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                            <div class="product-card">
+                                <img src="img/water heater.jpeg" alt="Water Heater">
+                                <h3>Water Heater</h3>
+                                <p>Instant hot water at your service.</p>
+                                <span>Price: Ksh 20,000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+            <section class="brand-section small-appliances">
+                <h6>Small Appliances</h6>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/blender.png" alt="Blender">
+                        <h3>Blender</h3>
+                        <p>Perfect for smoothies and more.</p>
+                        <span>Price: Ksh 4,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/electric kettle.webp" alt="Electric Kettle">
+                        <h3>Electric Kettle</h3>
+                        <p>Fast boiling for your beverages.</p>
+                        <span>Price: Ksh 3,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/toaster.jpeg" alt="Toaster">
+                        <h3>Toaster</h3>
+                        <p>Crispy toast every morning.</p>
+                        <span>Price: Ksh 2,800</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/iron box.jpeg" alt="Iron">
+                        <h3>Iron</h3>
+                        <p>Keep your clothes wrinkle-free.</p>
+                        <span>Price: Ksh 3,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/hair dryer.jpeg" alt="Hair Dryer">
+                        <h3>Hair Dryer</h3>
+                        <p>Style your hair with ease.</p>
+                        <span>Price: Ksh 1,800</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/coffe maker.webp" alt="Coffee Maker">
+                        <h3>Coffee Maker</h3>
+                        <p>Brew the perfect cup every time.</p>
+                        <span>Price: Ksh 6,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/rice cooker.jpeg" alt="Rice Cooker">
+                        <h3>Rice Cooker</h3>
+                        <p>Easy cooking with perfect results.</p>
+                        <span>Price: Ksh 4,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/sandwich maker.jpeg" alt="Sandwich Maker">
+                        <h3>Sandwich Maker</h3>
+                        <p>Quick and easy toasted sandwiches.</p>
+                        <span>Price: Ksh 3,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/juicer.jpeg" alt="Juicer">
+                        <h3>Juicer</h3>
+                        <p>Fresh juice, hassle-free.</p>
+                        <span>Price: Ksh 7,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/electric fan.jpeg" alt="Electric Fan">
+                        <h3>Electric Fan</h3>
+                        <p>Stay cool with powerful airflow.</p>
+                        <span>Price: Ksh 4,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/portable heater.jpeg" alt="Portable Heater">
+                        <h3>Portable Heater</h3>
+                        <p>Compact and efficient heating.</p>
+                        <span>Price: Ksh 5,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/electric griddle.jpeg" alt="Electric Griddle">
+                        <h3>Electric Griddle</h3>
+                        <p>Perfect for pancakes and grilling.</p>
+                        <span>Price: Ksh 8,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/handheld vacuum.jpeg" alt="Handheld Vacuum">
+                        <h3>Handheld Vacuum</h3>
+                        <p>Compact cleaning on the go.</p>
+                        <span>Price: Ksh 6,800</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/electric knife.jpeg" alt="Electric Knife">
+                        <h3>Electric Knife</h3>
+                        <p>Effortless slicing of meats and bread.</p>
+                        <span>Price: Ksh 3,700</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/popcorn maker.jpeg" alt="Popcorn Maker">
+                        <h3>Popcorn Maker</h3>
+                        <p>Movie night, made easy.</p>
+                        <span>Price: Ksh 3,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/yoghurt maker.jpeg" alt="Yogurt Maker">
+                        <h3>Yogurt Maker</h3>
+                        <p>Homemade healthy yogurt.</p>
+                        <span>Price: Ksh 5,200</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/mini fridge.jpeg" alt="Mini Fridge">
+                        <h3>Mini Fridge</h3>
+                        <p>Compact cooling solution.</p>
+                        <span>Price: Ksh 15,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/handmixer.jpeg" alt="Hand Mixer">
+                        <h3>Hand Mixer</h3>
+                        <p>Effortless mixing and whisking.</p>
+                        <span>Price: Ksh 2,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    <section class="product-category electrical-accessories"></section>
+            <h6><i class="fas fa-shield-alt"></i> Security Devices</h6>
+            <section class="product-category cctv-cameras">
+                <h4 class="styled-heading"><i class="fa fa-video"></i> CCTV Cameras</h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/hd cctv cameras.jpeg" alt="HD CCTV Camera">
+                        <h3>HD CCTV Cameras</h3>
+                        <p>High-definition surveillance for your home or office.</p>
+                        <span>Ksh 15,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/wireless cctv cameras.jpeg" alt="Wireless CCTV Camera">
+                        <h3>Wireless CCTV Cameras</h3>
+                        <p>Convenient and easy to install wireless CCTV system.</p>
+                        <span>Ksh 20,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/outdoor cctv cameras.jpeg" alt="Outdoor CCTV Camera">
+                        <h3>Outdoor CCTV Cameras</h3>
+                        <p>Durable and weatherproof for outdoor surveillance.</p>
+                        <span>Ksh 18,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/pan tilt cctv cameras.jpeg" alt="Pan-Tilt CCTV Camera">
+                        <h3>Pan-Tilt CCTV Cameras</h3>
+                        <p>360-degree rotation for full coverage.</p>
+                        <span>Ksh 25,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/4k cctv cameras.jpeg" alt="4K CCTV Camera">
+                        <h3>4K CCTV Cameras</h3>
+                        <p>Ultra-high-definition camera with 4K resolution.</p>
+                        <span>Ksh 40,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/night vision cctv cameras.jpeg" alt="Night Vision CCTV Camera">
+                        <h3>Night Vision CCTV Cameras</h3>
+                        <p>Perfect for low-light environments with night vision capability.</p>
+                        <span>Ksh 22,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/dome cctv cameras.jpeg" alt="Dome CCTV Camera">
+                        <h3>Dome CCTV Cameras</h3>
+                        <p>Discreet surveillance with a dome-shaped camera.</p>
+                        <span>Ksh 16,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/bullet cctv cameras.jpeg" alt="Bullet CCTV Camera">
+                        <h3>Bullet CCTV Cameras</h3>
+                        <p>Durable and visible camera for outdoor surveillance.</p>
+                        <span>Ksh 18,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/360 cctv cameras.jpeg" alt="360-Degree CCTV Camera">
+                        <h3>360-Degree CCTV Cameras</h3>
+                        <p>Provides full 360-degree coverage with advanced technology.</p>
+                        <span>Ksh 30,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/wireless ip  cctv cameras.jpeg" alt="Wireless IP CCTV Camera">
+                        <h3>Wireless IP CCTV Cameras</h3>
+                        <p>Stream footage directly to your mobile device with wireless IP.</p>
+                        <span>Ksh 22,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="product-category smart-locks">
+                <h4 class="styled-heading"><i class="fa fa-key"></i> Smart Locks</h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/fingerprint smartlock.jpeg" alt="Fingerprint Smart Lock">
+                        <h3>Fingerprint Smart Lock</h3>
+                        <p>Advanced fingerprint technology for secure entry.</p>
+                        <span>Ksh 12,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/bluetooth smartlock.jpeg" alt="Bluetooth Smart Lock">
+                        <h3>Bluetooth Smart Lock</h3>
+                        <p>Unlock with your smartphone using Bluetooth.</p>
+                        <span>Ksh 15,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/keypad smartlock.jpeg" alt="Keypad Smart Lock">
+                        <h3>Keypad Smart Lock</h3>
+                        <p>Easy-to-use keypad lock with customizable codes.</p>
+                        <span>Ksh 10,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/wifi smartlock.jpeg" alt="Wi-Fi Smart Lock">
+                        <h3>Wi-Fi Smart Lock</h3>
+                        <p>Control your lock remotely with Wi-Fi connectivity.</p>
+                        <span>Ksh 18,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/deadbolt smartlock.jpeg" alt="Smart Deadbolt Lock">
+                        <h3>Smart Deadbolt Lock</h3>
+                        <p>Secure your door with a smart deadbolt system.</p>
+                        <span>Ksh 14,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/camera smartlock.jpeg" alt="Smart Lock with Camera">
+                        <h3>Smart Lock with Camera</h3>
+                        <p>Unlock your door while monitoring visitors with an integrated camera.</p>
+                        <span>Ksh 25,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/biometric smart lock.jpeg" alt="Biometric Smart Lock">
+                        <h3>Biometric Smart Lock</h3>
+                        <p>Unlock using your fingerprint for maximum security.</p>
+                        <span>Ksh 20,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/RFID smart lock.jpeg" alt="RFID Smart Lock">
+                        <h3>RFID Smart Lock</h3>
+                        <p>Access your door with RFID cards or keychains.</p>
+                        <span>Ksh 17,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/voice smartlock.jpeg" alt="Voice Control Smart Lock">
+                        <h3>Voice Control Smart Lock</h3>
+                        <p>Unlock your door with voice commands through Alexa or Google Assistant.</p>
+                        <span>Ksh 22,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/touchscreen smartlock.jpeg" alt="Touchscreen Smart Lock">
+                        <h3>Touchscreen Smart Lock</h3>
+                        <p>Stylish touchscreen lock with customizable codes.</p>
+                        <span>Ksh 19,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="product-category other-devices">
+                <h4 class="styled-heading"><i class="fa fa-bolt"></i> Other Security Devices</h4>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="img/wireless doorbell camera.jpeg" alt="Wireless Doorbell Camera">
+                        <h3>Wireless Doorbell Camera</h3>
+                        <p>Monitor visitors remotely with a wireless doorbell camera.</p>
+                        <span>Ksh 12,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/smart smoke detector.jpeg" alt="Smart Smoke Detector">
+                        <h3>Smart Smoke Detector</h3>
+                        <p>Detect smoke and fire with real-time notifications on your phone.</p>
+                        <span>Ksh 8,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/motion sensor.jpeg" alt="Smart Motion Sensor">
+                        <h3>Smart Motion Sensor</h3>
+                        <p>Detect motion and receive alerts instantly.</p>
+                        <span>Ksh 7,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/alarm system.jpeg" alt="Smart Security Alarm System">
+                        <h3>Smart Security Alarm System</h3>
+                        <p>Comprehensive alarm system with app integration.</p>
+                        <span>Ksh 22,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/glass break sensor.jpeg" alt="Smart Glass Break Sensor">
+                        <h3>Smart Glass Break Sensor</h3>
+                        <p>Detect glass breakage and get immediate alerts.</p>
+                        <span>Ksh 5,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/home cotrol panel.jpeg" alt="Smart Home Control Panel">
+                        <h3>Smart Home Control Panel</h3>
+                        <p>Control all your security devices from a central panel.</p>
+                        <span>Ksh 18,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/wifi doorbell.jpeg" alt="Smart Wi-Fi Doorbell">
+                        <h3>Smart Wi-Fi Doorbell</h3>
+                        <p>Video doorbell with two-way audio and remote unlocking.</p>
+                        <span>Ksh 12,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/garage door opener.jpeg" alt="Smart Garage Door Opener">
+                        <h3>Smart Garage Door Opener</h3>
+                        <p>Control your garage door remotely from your phone.</p>
+                        <span>Ksh 10,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/smart light bulbs.jpeg" alt="Smart Light Bulbs">
+                        <h3>Smart Light Bulbs</h3>
+                        <p>Control your lights remotely with smart bulbs.</p>
+                        <span>Ksh 3,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/window alarm system.jpeg" alt="Smart Window Alarm">
+                        <h3>Smart Window Alarm</h3>
+                        <p>Protect your windows with a smart alarm system.</p>
+                        <span>Ksh 6,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/doorbell with camera video.jpeg" alt="Smart Doorbell Camera with Video">
+                        <h3>Smart Doorbell Camera with Video</h3>
+                        <p>See and speak to visitors with video doorbell functionality.</p>
+                        <span>Ksh 14,000</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/smoke and co2 detector.jpeg" alt="Smart Smoke & CO Detector">
+                        <h3>Smart Smoke & CO Detector</h3>
+                        <p>Detect smoke and carbon monoxide with smart notifications.</p>
+                        <span>Ksh 10,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/security sensor sysem.jpeg" alt="Smart Security Sensor System">
+                        <h3>Smart Security Sensor System</h3>
+                        <p>Comprehensive security sensors for windows, doors, and more.</p>
+                        <span>Ksh 22,500</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            </section>
+    
+    <section class="product-category electrical-accessories">
+        <h6><i class="fas fa-plug"></i> Electrical Accessories</h6>
+        <section class="product-category bulbs">
+            <h4 class="styled-heading"><i class="fa fa-lightbulb"></i> Bulbs</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/LED Bulbs.jpeg" alt="LED Bulbs">
+                    <h3>LED Bulbs</h3>
+                    <p>Energy-efficient LED bulbs for bright lighting.</p>
+                    <span>Ksh 500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Smart Bulbs.jpeg" alt="Smart Bulbs">
+                    <h3>Smart Bulbs</h3>
+                    <p>Wi-Fi-enabled smart bulbs for remote control.</p>
+                    <span>Ksh 1,200</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Energy Saving Bulb.jpeg" alt="Energy Saving Bulb">
+                    <h3>Energy Saving Bulb</h3>
+                    <p>Low power consumption, high brightness.</p>
+                    <span>Ksh 450</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Fluorescent Bulb.jpeg" alt="Fluorescent Bulb">
+                    <h3>Fluorescent Bulb</h3>
+                    <p>Long-lasting fluorescent bulb for bright lighting.</p>
+                    <span>Ksh 350</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Incandescent Bulb.jpeg" alt="Incandescent Bulb">
+                    <h3>Incandescent Bulb</h3>
+                    <p>Classic incandescent bulb for soft light.</p>
+                    <span>Ksh 200</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-category extensions">
+            <h4 class="styled-heading"><i class="fa fa-plug"></i> Extension Cords</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/Extension Cords.jpeg" alt="Extension Cords">
+                    <h3>Extension Cords</h3>
+                    <p>Flexible extension cords for extra reach.</p>
+                    <span>Ksh 800</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Surge Protectors.jpeg" alt="Surge Protectors">
+                    <h3>Surge Protectors</h3>
+                    <p>Protect your devices from power surges.</p>
+                    <span>Ksh 1,800</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Multi-Socket Extension.jpeg" alt="Multi-Socket Extension">
+                    <h3>Multi-Socket Extension</h3>
+                    <p>Multi-socket extension cord for multiple devices.</p>
+                    <span>Ksh 1,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Heavy Duty Extension.jpeg" alt="Heavy Duty Extension">
+                    <h3>Heavy Duty Extension</h3>
+                    <p>Heavy-duty extension for high-power devices.</p>
+                    <span>Ksh 2,200</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Extension Reel.jpeg" alt="Extension Reel">
+                    <h3>Extension Reel</h3>
+                    <p>Portable extension reel for outdoor use.</p>
+                    <span>Ksh 1,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-category bulb-holders">
+            <h4 class="styled-heading"><i class="fa fa-cogs"></i> Bulb Holders</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/ceramic bulb holder.jpeg" alt="Ceramic Bulb Holders">
+                    <h3>Ceramic Bulb Holders</h3>
+                    <p>Durable ceramic holders for bulbs.</p>
+                    <span>Ksh 300</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Plastic Bulb Holders.jpeg" alt="Plastic Bulb Holders">
+                    <h3>Plastic Bulb Holders</h3>
+                    <p>Lightweight and affordable plastic bulb holders.</p>
+                    <span>Ksh 150</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Screw-in Bulb Holde.jpeg" alt="Screw-in Bulb Holder">
+                    <h3>Screw-in Bulb Holder</h3>
+                    <p>Easy-to-use screw-in bulb holder.</p>
+                    <span>Ksh 250</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Bulb Holder Set.jpeg" alt="Bulb Holder Set">
+                    <h3>Bulb Holder Set</h3>
+                    <p>Complete set of bulb holders for various bulbs.</p>
+                    <span>Ksh 600</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Ceiling Bulb Holde.jpeg" alt="Ceiling Bulb Holder">
+                    <h3>Ceiling Bulb Holder</h3>
+                    <p>Bulb holder for ceiling lights.</p>
+                    <span>Ksh 350</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-category cables">
+            <h4 class="styled-heading"><i class="fa fa-plug"></i> Cables</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/Power Cables.jpeg" alt="Power Cables">
+                    <h3>Power Cables</h3>
+                    <p>High-quality power cables for electronics.</p>
+                    <span>Ksh 600</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/USB Cables.jpeg" alt="USB Cables">
+                    <h3>USB Cables</h3>
+                    <p>Fast-charging USB cables for mobile devices.</p>
+                    <span>Ksh 300</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/hdmi cables.jpeg" alt="HDMI Cables">
+                    <h3>HDMI Cables</h3>
+                    <p>High-speed HDMI cables for video and audio.</p>
+                    <span>Ksh 800</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/ethernet cables.jpeg" alt="Ethernet Cables">
+                    <h3>Ethernet Cables</h3>
+                    <p>Fast and reliable Ethernet cables for networking.</p>
+                    <span>Ksh 500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Audio Cables.jpeg" alt="Audio Cables">
+                    <h3>Audio Cables</h3>
+                    <p>High-quality audio cables for sound systems.</p>
+                    <span>Ksh 400</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <section class="product-category networking-devices">
+        <h6><i class="fas fa-network-wired"></i> Networking Devices</h6>
+        <section class="product-category routers">
+            <h4 class="styled-heading"><i class="fa fa-wifi"></i> Routers</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/tp link router.jpeg" alt="TP-Link Router">
+                    <h3>TP-Link AC1750</h3>
+                    <p>High-speed dual-band router with improved range.</p>
+                    <span>Ksh 8,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/netgear router.jpeg" alt="Netgear Router">
+                    <h3>Netgear Nighthawk</h3>
+                    <p>Fast Wi-Fi router with strong security features.</p>
+                    <span>Ksh 12,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/asus router.jpeg"Asus Router">
+                    <h3>Asus RT-AC68U</h3>
+                    <p>Smart router with advanced features for gaming.</p>
+                    <span>Ksh 10,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/linksys router.jpeg" alt="Linksys Router">
+                    <h3>Linksys EA8300</h3>
+                    <p>Tri-band router with MU-MIMO technology.</p>
+                    <span>Ksh 9,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/google wifi router.jpeg" alt="Google Wi-Fi Router">
+                    <h3>Google Wi-Fi</h3>
+                    <p>Mesh system for seamless Wi-Fi coverage across your home.</p>
+                    <span>Ksh 18,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="product-category switches">
+            <h4 class="styled-heading"><i class="fa fa-random"></i> Switches</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/D-Link DGS-108.jpeg" alt="D-Link Switch">
+                    <h3>D-Link DGS-108</h3>
+                    <p>8-port gigabit switch for home and office use.</p>
+                    <span>Ksh 6,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/netgear switch.jpeg" alt="Netgear Switch">
+                    <h3>Netgear GS308</h3>
+                    <p>8-port switch with high-speed performance.</p>
+                    <span>Ksh 7,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/cisco switch.jpeg" alt="Cisco Switch">
+                    <h3>Cisco SG350-10</h3>
+                    <p>Advanced managed switch with VLAN support.</p>
+                    <span>Ksh 15,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/tp link switch.jpeg" alt="TP-Link Switch">
+                    <h3>TP-Link TL-SG1016</h3>
+                    <p>16-port gigabit switch with energy-saving features.</p>
+                    <span>Ksh 9,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Zyxel GS1900-8 switch.jpeg" alt="Zyxel Switch">
+                    <h3>Zyxel GS1900-8</h3>
+                    <p>Smart managed switch with 8 gigabit ports.</p>
+                    <span>Ksh 10,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="product-category accessories">
+            <h4 class="styled-heading">Other Networking Accessories</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/wifi adapter.jpeg" alt="Wi-Fi Adapter">
+                    <h3>Wi-Fi Adapter</h3>
+                    <p>USB Wi-Fi adapter for laptops and desktops.</p>
+                    <span>Ksh 2,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/cat 6 cables.jpeg" alt="Cat 6 Cable">
+                    <h3>Cat 6 Cable</h3>
+                    <p>Ultra-fast Cat 6 cable for high-bandwidth needs.</p>
+                    <span>Ksh 1,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/flat ethernet cable.jpeg" alt="Flat Ethernet Cable">
+                    <h3>Flat Ethernet Cable</h3>
+                    <p>Flexible flat Ethernet cable for easy management.</p>
+                    <span>Ksh 800</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/ethernet cable pack.jpeg" alt="Ethernet Cable Pack">
+                    <h3>Ethernet Cable Pack</h3>
+                    <p>Pack of 3 high-quality Ethernet cables.</p>
+                    <span>Ksh 2,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/adapter usb cable.jpeg" alt="USB to Ethernet Adapter">
+                    <h3>USB to Ethernet Adapter</h3>
+                    <p>Convert USB ports to Ethernet for a stable connection.</p>
+                    <span>Ksh 1,200</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/usb hub.jpeg" alt="USB Hub">
+                    <h3>USB Hub</h3>
+                    <p>Multi-port USB hub for extending your device connections.</p>
+                    <span>Ksh 1,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/power adapter.jpeg" alt="Powerline Adapter">
+                    <h3>Powerline Adapter</h3>
+                    <p>Extend your network using electrical wiring in your home.</p>
+                    <span>Ksh 3,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/wifi plug.jpeg" alt="Smart Wi-Fi Plug">
+                    <h3>Smart Wi-Fi Plug</h3>
+                    <p>Control your devices remotely with a smart plug.</p>
+                    <span>Ksh 1,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>on class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="product-category computing-devices">
+        <h6><i class="fas fa-laptop"></i> Computing Devices</h6>
+        
+        <section class="product-category laptops">
+            <h4 class="styled-heading"><i class="fa fa-laptop"></i> Laptops</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/HP Core i5.jpeg" alt="HP Core i5">
+                    <h3>HP Core i5</h3>
+                    <p>High-performance laptop for all your needs.</p>
+                    <span>Ksh 50,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Dell Inspiron 15.jpeg" alt="Dell Inspiron 15">
+                    <h3>Dell Inspiron 15</h3>
+                    <p>Ultra-thin laptop with excellent battery life.</p>
+                    <span>Ksh 55,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Lenovo ThinkPad X1.jpeg" alt="Lenovo ThinkPad X1">
+                    <h3>Lenovo ThinkPad X1</h3>
+                    <p>Fast and efficient laptop for work and play.</p>
+                    <span>Ksh 60,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Acer Predator Helios 300.jpeg" alt="Acer Predator Helios 300">
+                    <h3>Acer Predator Helios 300</h3>
+                    <p>Gaming laptop with high-end graphics.</p>
+                    <span>Ksh 80,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/HP Pavilion x360.jpeg" alt="HP Pavilion x360">
+                    <h3>HP Pavilion x360</h3>
+                    <p>Portable laptop with exceptional processing power.</p>
+                    <span>Ksh 45,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Asus ZenBook 14.jpeg" alt="Asus ZenBook 14">
+                    <h3>Asus ZenBook 14</h3>
+                    <p>Lightweight and fast laptop for professionals.</p>
+                    <span>Ksh 52,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Microsoft Surface Laptop 4.jpeg" alt="Microsoft Surface Laptop 4">
+                    <h3>Microsoft Surface Laptop 4</h3>
+                    <p>Touchscreen laptop with great performance.</p>
+                    <span>Ksh 58,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Razer Blade Stealth 13.jpeg" alt="Razer Blade Stealth 13">
+                    <h3>Razer Blade Stealth 13</h3>
+                    <p>Powerful laptop with a high-definition display.</p>
+                    <span>Ksh 75,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/HP Chromebook 14.jpeg" alt="HP Chromebook 14">
+                    <h3>HP Chromebook 14</h3>
+                    <p>Affordable laptop with all the basic features.</p>
+                    <span>Ksh 30,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Dell XPS 13.jpeg" alt="Dell XPS 13">
+                    <h3>Dell XPS 13</h3>
+                    <p>Perfect for students with fast processing.</p>
+                    <span>Ksh 35,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Alienware m15.jpeg" alt="Alienware m15">
+                    <h3>Alienware m15</h3>
+                    <p>Super-fast laptop with excellent graphics.</p>
+                    <span>Ksh 85,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Lenovo Legion 5.jpeg" alt="Lenovo Legion 5">
+                    <h3>Lenovo Legion 5</h3>
+                    <p>Reliable laptop with a high-resolution screen.</p>
+                    <span>Ksh 70,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/HP Envy x360.jpeg" alt="HP Envy x360">
+                    <h3>HP Envy x360</h3>
+                    <p>Fast laptop with excellent processing and speed.</p>
+                    <span>Ksh 65,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/MSI GE75 Raider.jpeg" alt="MSI GE75 Raider">
+                    <h3>MSI GE75 Raider</h3>
+                    <p>Gaming laptop with top-tier specs.</p>
+                    <span>Ksh 95,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Lenovo IdeaPad 3.jpeg" alt="Lenovo IdeaPad 3">
+                    <h3>Lenovo IdeaPad 3</h3>
+                    <p>Affordable and efficient laptop for everyday tasks.</p>
+                    <span>Ksh 25,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="product-category pcs">
+            <h4 class="styled-heading"><i class="fa fa-desktop"></i> PCs</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/HP Pavilion Desktop.jpeg" alt="HP Pavilion Desktop">
+                    <h3>HP Pavilion Desktop</h3>
+                    <p>High-performance desktop for gaming and work.</p>
+                    <span>Ksh 60,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Dell Inspiron 3880 pc desktop.jpeg" alt="Dell Inspiron 3880">
+                    <h3>Dell Inspiron 3880</h3>
+                    <p>Mid-range desktop PC for home use.</p>
+                    <span>Ksh 45,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/CyberPowerPC Gamer Xtreme pc.jpeg" alt="CyberPowerPC Gamer Xtreme">
+                    <h3>CyberPowerPC Gamer Xtreme</h3>
+                    <p>Gaming PC with high-end specifications.</p>
+                    <span>Ksh 80,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Apple Mac Mini desktop.jpeg" alt="Apple Mac Mini">
+                    <h3>Apple Mac Mini</h3>
+                    <p>Compact and efficient desktop PC.</p>
+                    <span>Ksh 40,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Lenovo ThinkCentre M720 Desktop.jpeg" alt="Lenovo ThinkCentre M720">
+                    <h3>Lenovo ThinkCentre M720</h3>
+                    <p>Affordable desktop PC for basic tasks.</p>
+                    <span>Ksh 30,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/HP EliteDesktop.jpeg" alt="HP EliteDesktop">
+                    <h3>HP EliteDesktop</h3>
+                    <p>Efficient desktop for work with large storage.</p>
+                    <span>Ksh 50,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Acer Aspire TC pc.jpeg" alt="Acer Aspire TC">
+                    <h3>Acer Aspire TC</h3>
+                    <p>Affordable PC for everyday tasks.</p>
+                    <span>Ksh 28,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/MSI Trident 3 pc.jpeg" alt="MSI Trident 3">
+                    <h3>MSI Trident 3</h3>
+                    <p>Compact gaming PC with top performance.</p>
+                    <span>Ksh 75,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/Asus ROG Strix pc.jpeg" alt="Asus ROG Strix">
+                    <h3>Asus ROG Strix</h3>
+                    <p>High-performance gaming desktop for enthusiasts.</p>
+                    <span>Ksh 85,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/gateway pc.jpeg" alt="Gateway Desktop PC">
+                    <h3>Gateway Desktop PC</h3>
+                    <p>Budget-friendly desktop for general tasks.</p>
+                    <span>Ksh 25,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category accessories">
+            <h4 class="styled-heading"><i class="fa fa-cogs"></i> Accessories</h4>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/wireless mouse.jpeg" alt="Logitech Wireless Mouse">
+                    <h3>Logitech Wireless Mouse</h3>
+                    <p>Comfortable and responsive wireless mouse.</p>
+                    <span>Ksh 1,200</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/keyboard.jpeg" alt="Mechanical Keyboard">
+                    <h3>Mechanical Keyboards</h3>
+                    <p>Durable and responsive mechanical keyboard.</p>
+                    <span>Ksh 3,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/wireless earbuds.jpeg" alt="Wireless Earbuds">
+                    <h3>Wireless Earbuds</h3>
+                    <p>High-quality sound with wireless convenience.</p>
+                    <span>Ksh 2,500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/external hdd.jpeg" alt="External Hard Drive">
+                    <h3>External Hard Drive</h3>
+                    <p>Portable 1TB external hard drive for storage.</p>
+                    <span>Ksh 4,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/gaming headset.jpeg" alt="Gaming Headset">
+                    <h3>Gaming Headset</h3>
+                    <p>High-quality sound with noise cancellation.</p>
+                    <span>Ksh 3,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/mouse pad.jpeg" alt="Mouse Pad">
+                    <h3>Mouse Pad</h3>
+                    <p>Non-slip, large mouse pad for gaming.</p>
+                    <span>Ksh 500</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/webcam.jpeg" alt="Webcam">
+                    <h3>Webcam</h3>
+                    <p>HD webcam for clear video calls and streaming.</p>
+                    <span>Ksh 2,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/sd card.jpeg" alt="SD Card">
+                    <h3>SD Card</h3>
+                    <p>64GB SD card for cameras and storage devices.</p>
+                    <span>Ksh 800</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/flash drive.jpeg" alt="USB Flash Drive">
+                    <h3>USB Flash Drive</h3>
+                    <p>Portable 32GB USB drive for quick file transfer.</p>
+                    <span>Ksh 600</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/usb c adapter.jpeg" alt="USB-C Adapter">
+                    <h3>USB-C Adapter</h3>
+                    <p>Adapter for USB-C devices and connections.</p>
+                    <span>Ksh 1,000</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <p>Electrifying Deals, Exceptional Service!</p>
+    
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lightning Bolt Electronics. All Rights Reserved.</p>
+        <ul>
+            <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms</a></li>
+            <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
