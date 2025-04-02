@@ -508,7 +508,105 @@ if ($stmt) {
         }
     }
     
-    
+    /* General adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        font-size: 20px; /* Smaller font size */
+        padding: 10px; /* Reduced padding */
+    }
+
+    /* Search form adjustments */
+    #searchform {
+        position: relative; /* Change to relative for better positioning */
+        margin: 10px; /* Add margin for spacing */
+        width: calc(100% - 20px); /* Full width with padding */
+        box-shadow: none; /* Remove shadow for simplicity */
+    }
+
+    .search-wrapper {
+        width: 100%; /* Full width for search wrapper */
+    }
+
+    #searchinput {
+        width: 100%; /* Full width for input */
+        margin: 0; /* Reset margin */
+        padding: 8px; /* Adjust padding */
+    }
+
+    #searchform button {
+        padding: 8px 12px; /* Adjust button padding */
+        margin-left: 5px; /* Add margin for spacing */
+    }
+
+    /* View cart button adjustments */
+    .view-cart {
+        position: fixed; /* Keep it fixed */
+        bottom: 20px; /* Position at the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center alignment */
+        background: green; /* Background color */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Adjust padding */
+        font-size: 14px; /* Smaller font size */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        display: inline-block; /* Inline block for button */
+        z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .view-cart:hover {
+        background: darkgreen; /* Darker background on hover */
+    }
+
+    /* Scroll buttons adjustments */
+    #backToTopBtn, #scrollToBottomBtn {
+        position: fixed; /* Keep them fixed */
+        right: 20px; /* Position on the right */
+        background-color: #f4c542; /* Background color */
+        color: #000; /* Text color */
+        border: none; /* No border */
+        padding: 10px; /* Adjust padding */
+        font-size: 16px; /* Smaller font size */
+        border-radius: 50%; /* Circular buttons */
+        cursor: pointer; /* Pointer cursor */
+        display: none; /* Initially hidden */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    #backToTopBtn {
+        bottom: 70px; /* Position above the bottom button */
+    }
+
+    #scrollToBottomBtn {
+        bottom: 20px; /* Position at the bottom */
+    }
+
+    #backToTopBtn:hover, #scrollToBottomBtn:hover {
+        background-color: #ffcc00; /* Change background on hover */
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    /* Further reduce header font size */
+    header {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    /* Adjust view cart button */
+    .view-cart {
+        font-size: 12px; /* Smaller font size */
+        padding: 8px 12px; /* Smaller padding */
+    }
+
+    /* Adjust scroll buttons */
+    #backToTopBtn, #scrollToBottomBtn {
+        padding: 8px; /* Smaller padding */
+        font-size: 14px; /* Smaller font size */
+    }
+}
 </style>
         
     </style>
@@ -651,9 +749,6 @@ if ($stmt) {
         <div class="social-links">
             <a href="https://twitter.com/YourHandle" target="_blank" class="social-icon">
                 <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="https://youtube.com/YourChannel" target="_blank" class="social-icon">
-                <i class="fab fa-youtube"></i> YouTube
             </a>
             <a href="https://facebook.com/YourPage" target="_blank" class="social-icon">
                 <i class="fab fa-facebook"></i> Facebook

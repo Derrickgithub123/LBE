@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["register_password"] = $password;
 
         // Redirect to Firebase registration page
-        header("Location: firebase_register.html");
+        header("Location: index.php");
         exit();
     } else {
         echo "Error: " . $stmt->error;

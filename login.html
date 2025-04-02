@@ -69,6 +69,7 @@
             color: white;
             font-size: 16px;
             cursor: pointer;
+            margin-top: 10px;
         }
 
         .login-btn:hover {
@@ -81,7 +82,7 @@
             align-items: center;
             justify-content: start;
             margin-top: 10px;
-            gap: 8px; /* Adds spacing between checkbox and text */
+            gap: 8px;
             font-size: 14px;
         }
 
@@ -90,9 +91,26 @@
             height: 16px;
         }
 
+        /* Forgot Password Link */
+        .forgot-password {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .forgot-password a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            color: #ff5252;
+            text-decoration: underline;
+        }
+
         /* Register Link */
         .register-section {
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .register-link {
@@ -126,6 +144,11 @@
             </div>
         
             <button class="login-btn" type="submit">Login</button>
+            
+            <!-- Forgot Password Link moved below login button -->
+            <div class="forgot-password">
+                <a href="forgot-password.php">Forgot Password?</a>
+            </div>
         </form>
         
 

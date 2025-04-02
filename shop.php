@@ -41,6 +41,18 @@ if (isset($_SESSION['cart'])) {
     }
 }
 
+$search_condition = "";
+$search_params = [];
+$search_query = "";
+
+if (isset($_GET['query']) && !empty(trim($_GET['query']))) {
+    $search_query = trim($_GET['query']);
+    $search_condition = " WHERE name LIKE ? OR description LIKE ?";
+    $search_param = "%" . $search_query . "%";
+    $search_params = [$search_param, $search_param];
+}
+
+
 // Fetch active offer status
 $offer_active = false;
 $discount_percentage = 0;
@@ -728,6 +740,7 @@ footer {
         border: none;
         background-color:black;
         color: white;
+        margin: 10px;
         border-radius: 5px;
         cursor: pointer;
         margin-left: 10px;
@@ -883,6 +896,106 @@ label[for="sort-by"] {
         from {opacity: 1;}
         to {opacity: 0;}
     }
+    /* General adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust header font size */
+    header {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    /* Search form adjustments */
+    #searchform {
+        position: relative; /* Change to relative for better positioning */
+        top: auto; /* Reset top positioning */
+        right: auto; /* Reset right positioning */
+        margin: 10px; /* Add margin for spacing */
+        width: calc(100% - 20px); /* Full width with padding */
+        box-shadow: none; /* Remove shadow for simplicity */
+    }
+
+    #searchinput {
+        width: 100%; /* Full width for input */
+        margin: 0; /* Reset margin */
+    }
+
+    /* Filter sidebar adjustments */
+    .filter-sidebar {
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0; /* Add margin for spacing */
+        position: relative; /* Reset position */
+        float: none; /* Remove float */
+    }
+
+    /* Adjust product card padding */
+    .product-card {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    /* Adjust product image height */
+    .product-card img {
+        height: 150px; /* Reduce image height */
+    }
+
+    /* Adjust product name font size */
+    .product-card h3 {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    /* Adjust product description font size */
+    .product-card p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Adjust price container */
+    .price-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    /* Adjust no products found message */
+    .no-products {
+        padding: 20px; /* Reduce padding */
+    }
+
+    /* Adjust buttons */
+    .btn-add-cart {
+        padding: 8px; /* Reduce padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Adjust sort container */
+    .sort-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    /* Adjust select box */
+    #sort-by {
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    /* Further reduce header font size */
+    header {
+        font-size: 18px;
+    }
+
+    /* Adjust button sizes */
+    #backToTopBtn, #scrollToBottomBtn {
+        padding: 10px; /* Smaller padding */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    /* Adjust view cart button */
+    .view-cart {
+        font-size: 14px; /* Smaller font size */
+        padding: 10px 20px; /* Smaller padding */
+    }
+}
 </style>
 </head>
 <body>
@@ -938,7 +1051,7 @@ label[for="sort-by"] {
 
         <form id="searchform" method="GET" action="shop.php">
             <div class="search-wrapper">
-                <input type="text" id="searchinput" name="q" placeholder="Search product..." value="<?= htmlspecialchars($search_query, ENT_QUOTES, 'UTF-8'); ?>">
+                <input type="text" id="searchinput" name="query" placeholder="Search products..." value="<?php echo isset($_GET['query']) ? htmlspecialchars($_GET['query']) : ''; ?>">
                 <button type="submit"><i class="fas fa-search"></i> Search</button>
             </div>
         </form>
@@ -1054,9 +1167,6 @@ label[for="sort-by"] {
         <div class="social-links">
             <a href="https://twitter.com/YourHandle" target="_blank" rel="noopener noreferrer" class="social-icon">
                 <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="https://youtube.com/YourChannel" target="_blank" rel="noopener noreferrer" class="social-icon">
-                <i class="fab fa-youtube"></i> YouTube
             </a>
             <a href="https://facebook.com/YourPage" target="_blank" rel="noopener noreferrer" class="social-icon">
                 <i class="fab fa-facebook"></i> Facebook
